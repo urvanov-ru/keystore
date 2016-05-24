@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:spring="http://www.springframework.org/tags">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"
+        pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="yes" />
+
+
+    <div class="headerTitle">
+        <spring:message code="ru.urvanov.keystore.application_title"
+            var="application_title_var" />
+        <H2 style="display: inline;">
+            <c:out value="${application_title_var}" />
+        </H2>
+        <spring:theme code="logo" var="logo_var" />
+        <spring:url value="${logo_var}" var="logo_url" />
+        <img src="${logo_url}" alt="logo" style="float: right" />
+    </div>
+
+    <div>
+        <nav>
+            <spring:message code="ru.urvanov.keystore.account"
+                var="account_var" />
+            <spring:message code="ru.urvanov.keystore.cabinet"
+                var="cabinet_var" />
+            <spring:message code="ru.urvanov.keystore.clients"
+                var="clients_var" />
+            <spring:message code="ru.urvanov.keystore.users"
+                var="users_var" />
+            <spring:message code="ru.urvanov.keystore.orders"
+                var="orders_var" />
+            <spring:message code="ru.urvanov.keystore.keys"
+                var="keys_var" />
+            <spring:message code="ru.urvanov.keystore.payments"
+                var="payments_var" />
+            <spring:message code="ru.urvanov.keystore.settings"
+                var="settings_var" />
+            <spring:message
+                code="ru.urvanov.keystore.dict_service_types"
+                var="dict_service_types_var" />
+            <spring:message code="ru.urvanov.keystore.dict_actions"
+                var="dict_actions_var" />
+            <spring:message code="ru.urvanov.keystore.dict_groups"
+                var="dict_groups_var" />
+            <spring:message code="ru.urvanov.keystore.templates"
+                var="templates_var" />
+            <ul>
+                <li><a href="#"><c:out value="${clients_var}" /></a></li>
+
+                <li><a href="#"><c:out value="${orders_var}" /></a></li>
+                <li><a href="#"><c:out value="${payments_var}" /></a></li>
+                <li><a href="#"><c:out value="${keys_var}" /></a></li>
+
+                <li><a href="#"><c:out value="${cabinet_var}" /><span
+                        class="caret"></span></a>
+                    <div>
+                        <ul>
+                            <spring:url value="/cabinet/cabinet" var="cabinet_url" />
+                            
+                            <li><a href="${cabinet_url}"><c:out
+                                        value="${cabinet_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${account_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${users_var}" /></a></li>
+                        </ul>
+                    </div></li>
+
+                <li><a href="#"><c:out value="${settings_var}" /><span
+                        class="caret"></span></a>
+                    <div>
+                        <ul>
+                            <li><a href="#"><c:out
+                                        value="${settings_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${dict_service_types_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${dict_actions_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${dict_groups_var}" /></a></li>
+                            <li><a href="#"><c:out
+                                        value="${templates_var}" /></a></li>
+                        </ul>
+                    </div></li>
+
+                <li><a href="#"><c:out value="${users_var}" /></a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+</div>

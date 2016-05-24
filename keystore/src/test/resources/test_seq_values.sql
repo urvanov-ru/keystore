@@ -1,0 +1,13 @@
+﻿select setval('authorities_id_seq', 1000000);
+select setval('client_id_seq', 1000000);
+select setval('dict_action_id_seq', 1000000);
+select setval('dict_client_group_id_seq', 1000000);
+select setval('dict_service_type_id_seq', 1000000);
+select setval('key_id_seq', 1000000);
+select setval('link_client_dict_action_id_seq', 1000000);
+select setval('link_client_dict_service_type_id_seq', 1000000);
+select setval('link_user_dict_event_notification_id_seq', 1000000);
+select setval('orders_id_seq', 1000000);
+select setval('payment_id_seq', 1000000);
+select setval('user_access_id_seq', 1000000);
+select setval('users_id_seq', 1000000);

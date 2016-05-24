@@ -1,0 +1,220 @@
+<!ELEMENT dataset (
+   (authorities|
+    client|
+    dict_action|
+    dict_client_group|
+    dict_event|
+    dict_service_type|
+    global_settings|
+    key|
+    link_client_dict_action|
+    link_client_dict_service_type|
+    link_user_dict_event_notification|
+    orders|
+    payment|
+    session_log|
+    session_log_client|
+    user_access|
+    users)*)>
+
+<!ELEMENT authorities EMPTY>
+<!ATTLIST authorities
+    id CDATA #IMPLIED
+    user_id CDATA #IMPLIED
+    authority CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT client EMPTY>
+<!ATTLIST client
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    client_type CDATA #IMPLIED
+    unique_id CDATA #IMPLIED
+    contact_person_name CDATA #IMPLIED
+    contact_person_email CDATA #IMPLIED
+    contact_person_phone CDATA #IMPLIED
+    itn CDATA #IMPLIED
+    iec CDATA #IMPLIED
+    active CDATA #IMPLIED
+    key_activation_mode CDATA #IMPLIED
+    dict_client_group_id CDATA #IMPLIED
+    juridical_person_name CDATA #IMPLIED
+    juridical_person_address CDATA #IMPLIED
+    bank_name CDATA #IMPLIED
+    account CDATA #IMPLIED
+    corr_account CDATA #IMPLIED
+    bic CDATA #IMPLIED
+    version CDATA #IMPLIED
+    password CDATA #IMPLIED
+    authority CDATA #IMPLIED
+>
+
+<!ELEMENT dict_action EMPTY>
+<!ATTLIST dict_action
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    description CDATA #IMPLIED
+    date_begin CDATA #IMPLIED
+    date_end CDATA #IMPLIED
+    dict_service_type_id CDATA #IMPLIED
+    dict_action_type CDATA #IMPLIED
+    for_new_clients CDATA #IMPLIED
+    email_title CDATA #IMPLIED
+    email_body CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT dict_client_group EMPTY>
+<!ATTLIST dict_client_group
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    dict_client_group_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT dict_event EMPTY>
+<!ATTLIST dict_event
+    id CDATA #REQUIRED
+    code CDATA #IMPLIED
+    title CDATA #IMPLIED
+    body CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT dict_service_type EMPTY>
+<!ATTLIST dict_service_type
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    description CDATA #IMPLIED
+    status CDATA #IMPLIED
+    amount CDATA #IMPLIED
+    amount_30_days CDATA #IMPLIED
+    base_key CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT global_settings EMPTY>
+<!ATTLIST global_settings
+    id CDATA #REQUIRED
+    default_dict_client_group_id CDATA #IMPLIED
+    session_store_days CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT key EMPTY>
+<!ATTLIST key
+    id CDATA #IMPLIED
+    createdat CDATA #IMPLIED
+    order_id CDATA #IMPLIED
+    dict_action_id CDATA #IMPLIED
+    status CDATA #IMPLIED
+    date_begin CDATA #IMPLIED
+    date_end CDATA #IMPLIED
+    code CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT link_client_dict_action EMPTY>
+<!ATTLIST link_client_dict_action
+    id CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    dict_action_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT link_client_dict_service_type EMPTY>
+<!ATTLIST link_client_dict_service_type
+    id CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    dict_service_type_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT link_user_dict_event_notification EMPTY>
+<!ATTLIST link_user_dict_event_notification
+    id CDATA #IMPLIED
+    user_id CDATA #IMPLIED
+    dict_event_id CDATA #IMPLIED
+    allow_notification CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT orders EMPTY>
+<!ATTLIST orders
+    id CDATA #IMPLIED
+    createdat CDATA #IMPLIED
+    createdby CDATA #IMPLIED
+    dict_service_type_id CDATA #IMPLIED
+    status CDATA #IMPLIED
+    pay_datetime CDATA #IMPLIED
+    completed_datetime CDATA #IMPLIED
+    key_activation_mode CDATA #IMPLIED
+    payu_ref CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT payment EMPTY>
+<!ATTLIST payment
+    id CDATA #IMPLIED
+    createdat CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    order_id CDATA #IMPLIED
+    payment_type CDATA #IMPLIED
+    status CDATA #IMPLIED
+    method CDATA #IMPLIED
+    amount_without_commission CDATA #IMPLIED
+    amount_with_commission CDATA #IMPLIED
+    amount_of_commission CDATA #IMPLIED
+    info CDATA #IMPLIED
+    comment CDATA #IMPLIED
+    document CDATA #IMPLIED
+    payment_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT session_log EMPTY>
+<!ATTLIST session_log
+    createdat CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    user_id CDATA #IMPLIED
+    session_begin CDATA #IMPLIED
+    session_end CDATA #IMPLIED
+>
+
+<!ELEMENT session_log_client EMPTY>
+<!ATTLIST session_log_client
+    aggregate_date CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    visitors CDATA #IMPLIED
+    seconds_in_account CDATA #IMPLIED
+>
+
+<!ELEMENT user_access EMPTY>
+<!ATTLIST user_access
+    id CDATA #IMPLIED
+    code CDATA #IMPLIED
+    access CDATA #IMPLIED
+    user_id CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+
+<!ELEMENT users EMPTY>
+<!ATTLIST users
+    id CDATA #IMPLIED
+    username CDATA #IMPLIED
+    password CDATA #IMPLIED
+    enabled CDATA #IMPLIED
+    fullname CDATA #IMPLIED
+    sex CDATA #IMPLIED
+    phone CDATA #IMPLIED
+    post CDATA #IMPLIED
+    birthdate CDATA #IMPLIED
+    client_id CDATA #IMPLIED
+    activation_key CDATA #IMPLIED
+    activated CDATA #IMPLIED
+    change_password_key CDATA #IMPLIED
+    version CDATA #IMPLIED
+>
+

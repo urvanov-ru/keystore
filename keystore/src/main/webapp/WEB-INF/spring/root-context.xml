@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:task="http://www.springframework.org/schema/task"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!-- Root Context: defines shared resources visible who all other web 
+        components -->
+
+    <context:property-placeholder location="classpath:application.properties"
+        ignore-unresolvable="true" />
+
+    <import resource="spring-security.xml" />
+    <import resource="spring-dataSource.xml" />
+    <import resource="spring-mail.xml" />
+    <import resource="spring-tx.xml" />
+
+    <context:component-scan
+        base-package="ru.urvanov.keystore.service,ru.urvanov.keystore.dao" />
+    
+    <bean class="ru.urvanov.keystore.listener.LogoutListenerImpl" >
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    
+    <bean class="ru.urvanov.keystore.listener.AuthenticationSuccessListenerImpl" />
+    
+    <task:scheduler id="sheduler" pool-size="1" />
+
+    <task:scheduled-tasks scheduler="sheduler">
+        <task:scheduled ref="mailService" method="sendNotificationBirthday"
+             cron="0 0 0 * * *" />
+    </task:scheduled-tasks>
+    
+</beans>

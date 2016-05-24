@@ -1,0 +1,14 @@
+/** @class Ext.button.Button */
+//
+
+
+$button-toolbar-background-color: #305497 !default;
+$button-toolbar-border-color: #305497 !default;
+$button-toolbar-inner-border-color-focus: mix($button-toolbar-background-color, $base-color, 20%) !default;
+$button-toolbar-inner-border-color-focus-over: $button-toolbar-inner-border-color-focus !default;
+$button-toolbar-inner-border-color-focus-pressed: $button-toolbar-inner-border-color-focus !default;
+
+$button-toolbar-plain-border-color: transparent !default;
+$button-toolbar-plain-background-color: transparent !default;
+
+$button-toolbar-color: #ffffff !default;

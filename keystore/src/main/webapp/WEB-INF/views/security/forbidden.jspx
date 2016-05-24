@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+xmlns:c="http://java.sun.com/jsp/jtsl/core"
+xmlns:spring="http://www.springframework.org/tags">
+<spring:message code="ru.urvanov.keystore.forbidden" var="forbidden_var" />
+<c:out value="${forbidden_var}" />
+</div>

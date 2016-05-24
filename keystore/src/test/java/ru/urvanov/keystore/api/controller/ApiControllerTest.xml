@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <dict_client_group id="1" name="Группа по умолчанию" version="0"/>
+  <dict_client_group id="2" name="first dict client group" version="0"/>
+  
+  <client id="1" createdAt = "2000-01-01 10:00:01.0" name="client name" client_type="JURIDICAL_PERSON" unique_id="DF4344" contact_person_name="Иванов Василий Петрович" contact_person_email="ivanov@nowhere.com" contact_person_phone="00000000000" itn="0000000000" iec="000000000" active="true" key_activation_mode="AUTOMATIC" dict_client_group_id="1" version="0" password="$2a$10$FsxpCiHn9aayTuFU4Ei5QeJ0p/afltW7H5mhXyDjjdIDb8TcaOV0K" authority = "ROLE_CLIENT"/>
+  <client id="2" createdAt = "2000-01-01 10:00:01.0" name="client name2" client_type="JURIDICAL_PERSON" unique_id="FFFE" contact_person_name="Петров Николай Иванович" contact_person_email="petrov@nowhere.com" contact_person_phone="00000000000" itn="0000000000" iec="000000000" active="true" key_activation_mode="AUTOMATIC" dict_client_group_id="1" version="0" password="$2a$10$FsxpCiHn9aayTuFU4Ei5QeJ0p/afltW7H5mhXyDjjdIDb8TcaOV0K" authority = "ROLE_CLIENT"/>
+  <client id="3" createdAt = "2000-01-01 10:00:01.0" name="service client name" client_type="JURIDICAL_PERSON" unique_id="SSSS" contact_person_name="Сервисов Сервис Сервисович" contact_person_email="service@nowhere.com" contact_person_phone="00000000000" itn="0000000000" iec="000000000" active="true" key_activation_mode="AUTOMATIC" dict_client_group_id="1" version="0" password="$2a$10$FsxpCiHn9aayTuFU4Ei5QeJ0p/afltW7H5mhXyDjjdIDb8TcaOV0K" authority="ROLE_SERVICE"/>
+  
+  <users id="1" username="firstUserName" password="$2a$10$LHfT41eU1kbG8x1ZDRH3uuadtETDDRhHi7yNiu/yN5lMYhXwmzPTu" enabled="true" fullname="first full name" sex="MAN" phone="00000000" post="Главный менеджер" birthdate="2000-01-01" client_id="1" activated="true" version="0"/>
+  <users id="2" username="secondUserName" password="$2a$10$LHfT41eU1kbG8x1ZDRH3uuadtETDDRhHi7yNiu/yN5lMYhXwmzPTu" enabled="true" fullname="first full name" sex="MAN" phone="00000000" post="Главный менеджер2" birthdate="2000-01-01" client_id="2" activated="true" version="0"/>
+  <users id="3" username="service@nowhere.com" password="$2a$10$LHfT41eU1kbG8x1ZDRH3uuadtETDDRhHi7yNiu/yN5lMYhXwmzPTu" enabled="true" fullname="service full name" sex="MAN" phone="00000000" post="Главный менеджер2" birthdate="2000-01-01" client_id="3" activated="true" version="0"/>
+  <users id="4" username="firstUserName2" password="$2a$10$LHfT41eU1kbG8x1ZDRH3uuadtETDDRhHi7yNiu/yN5lMYhXwmzPTu" enabled="true" fullname="first2 full name" sex="WOMAN" phone="11111111" post="Товарищ сотрудник" birthdate="2000-12-05" client_id="1" activated="true" version="0"/>
+  <users id="5" username="service2@nowhere.com" password="$2a$10$LHfT41eU1kbG8x1ZDRH3uuadtETDDRhHi7yNiu/yN5lMYhXwmzPTu" enabled="true" fullname="service2 full name" sex="MAN" phone="00000000" post="уборщик" birthdate="2000-01-01" client_id="3" activated="true" version="0"/>
+  
+  <authorities id="1" user_id="1" authority="ROLE_CLIENT" version="0"/>
+  <authorities id="2" user_id="1" authority="ROLE_CLIENT_ADMIN" version="0"/>
+  <authorities id="3" user_id="2" authority="ROLE_CLIENT" version="0"/>
+  <authorities id="4" user_id="2" authority="ROLE_CLIENT_ADMIN" version="0"/>
+  <authorities id="5" user_id="3" authority="ROLE_SERVICE" version="0"/>
+  <authorities id="6" user_id="3" authority="ROLE_SERVICE_ADMIN" version="0"/>
+  <authorities id="7" user_id="4" authority="ROLE_CLIENT" version="0"/>
+  <authorities id="8" user_id="5" authority="ROLE_SERVICE" version="0"/>
+  
+  <dict_service_type id="1" name="first dict service type name" description="first dict service type description" status="ACTIVE" amount="121.01" amount_30_days="100.00" base_key="+oBHXaxrdQF1dGklbUBNbmwzypcA140irDYiBtD4wadRu5haNr3QGQym3vMYm8vwZd3h+KNWb8b1&#xA;QIITsRrwcx+EQOlGL2l6EkEEvN3dNYpG0qI/A8ugTnlddciS8EuOUsQCH6iHjfruTtAH0k8ARFjD&#xA;FIjwboXPnAUszpFR/z+ehtjQrFg5WBcJG35x22aeJ6/jfbQZM0JjLXRTyBKPLki3WiHd5td1wQp5&#xA;8uh2JAgwdbWNoTBmC/Wn6mrlj6A6HpUW4KMvKCKDWJWPx06LZ0D/G8bTS2kwyHla0PU1RLbWgCDT&#xA;KI7QgkUZfeD+IHx3DH98w+XskwntQ3xw/gYxSgx/fMPl7JMJGCP5PvVbwNQMf3zD5eyTCdYOb82C&#xA;38MojiaqJKXtL2EwlV0WtF2cA3UuWM5RwIyDzs5yZqABGFhPXeh4SfD3Fp2T4ja5zgD9HgCwpbt2&#xA;1RSAYmDBHLyE7sQvB7Wey4S9fgCJB4v8rO7ELwe1nsuEvVDgYbOCMw23DE5mJIj8JnsZq016MAzz&#xA;/t1XbAstwS3Sl9mImqN0ae+DA5N/f1mt1CSuuz6gQ0LgdJdnbFzbjY07UXQ4wUMPGQ==" version="0"/>
+  <dict_service_type id="2" name="second dict service type name" description="second dict service type description" status="BLOCKED" amount="99.99" amount_30_days="45.00" base_key="+oBHXaxrdQF1dGklbUBNbmwzypcA140irDYiBtD4wadRu5haNr3QGQym3vMYm8vwZd3h+KNWb8b1&#xA;QIITsRrwcx+EQOlGL2l6EkEEvN3dNYpG0qI/A8ugTnlddciS8EuOUsQCH6iHjfruTtAH0k8ARFjD&#xA;FIjwboXPnAUszpFR/z+ehtjQrFg5WBcJG35x22aeJ6/jfbQZM0JjLXRTyBKPLki3WiHd5td1wQp5&#xA;8uh2JAgwdbWNoTBmC/Wn6mrlj6A6HpUW4KMvKCKDWJWPx06LZ0D/G8bTS2kwyHla0PU1RLbWgCDT&#xA;KI7QgkUZfeD+IHx3DH98w+XskwntQ3xw/gYxSgx/fMPl7JMJGCP5PvVbwNQMf3zD5eyTCdYOb82C&#xA;38MojiaqJKXtL2EwlV0WtF2cA3UuWM5RwIyDzs5yZqABGFhPXeh4SfD3Fp2T4ja5zgD9HgCwpbt2&#xA;1RSAYmDBHLyE7sQvB7Wey4S9fgCJB4v8rO7ELwe1nsuEvVDgYbOCMw23DE5mJIj8JnsZq016MAzz&#xA;/t1XbAstwS3Sl9mImqN0ae+DA5N/f1mt1CSuuz6gQ0LgdJdnbFzbjY07UXQ4wUMPGQ==" version="0"/>
+  <dict_service_type id="3" name="third dict service type" description="third dict service type" status="BLOCKED" amount="2.00" amount_30_days="3.00" version="0"/>
+  <dict_service_type id="4" name="Test_pname" description="Test_info" status="ACTIVE" amount="1234.00" amount_30_days="100.00" version="0"/>
+  
+  <orders id="1" createdat="2000-01-01 10:00:01.0" createdby="1" dict_service_type_id="1" status="COMPLETED" pay_datetime="2000-01-02 01:01:10.0" completed_datetime="2000-01-03 02:02:30.0" key_activation_mode="AUTOMATIC" version="0"/>
+  <orders id="2" createdat="2000-01-02 00:00:00.0" createdby="1" dict_service_type_id="1" status="COMPLETED" pay_datetime="2000-01-03 00:00:00.0" completed_datetime="2000-01-04 00:00:00.0" key_activation_mode="MANUAL" version="0"/>
+  <orders id="3" createdat="2000-01-03 00:00:00.0" createdby="2" dict_service_type_id="1" status="COMPLETED" pay_datetime="2000-01-05 00:00:00.0" completed_datetime="2000-01-05 00:00:00.0" key_activation_mode="MANUAL" version="0"/>
+  <orders id="4" createdat="2014-01-12 23:00:00.0" createdby="2" dict_service_type_id="4" status="PENDING_PAYMENT" key_activation_mode="MANUAL" version="0"/>
+  
+  <payment id="1" createdat="2000-01-01 13:00:34.0" order_id="1" payment_type="ORDER_PAYMENT" status="SCHEDULED" method="CHECK" amount_without_commission="90.01" amount_with_commission="100.02" amount_of_commission="10.01" info="Информация о платеже" comment="Сложный комментарий" version="0"/>
+  
+  
+  <user_access id="1" code="SERVICE_READ_ORDER" access="true" user_id="1" version="0"/>
+  <user_access id="2" code="SERVICE_READ_PAYMENT" access="false" user_id="1" version="0"/>
+  <user_access id="17698" code="SERVICE_ADMIN_CLIENT" access="true" user_id="3" version="0"/>
+  
+  <dict_event id="1" code="CLIENT_ADDED" title="title" body="body" version="0"/>
+  <dict_event id="2" code="CLIENT_CHANGED" title="title" body="body" version="0"/>
+  <dict_event id="3" code="CLIENT_BLOCKED" title="title" body="body" version="0"/>
+  <dict_event id="4" code="USER_ADDED" title="title" body="body" version="0"/>
+  <dict_event id="5" code="USER_CHANGED" title="title" body="body" version="0"/>
+  <dict_event id="6" code="USER_BLOCKED" title="title" body="body" version="0"/>
+  <dict_event id="7" code="ORDER_CREATED" title="title" body="body" version="0"/>
+  <dict_event id="8" code="PAYED" title="title" body="body" version="0"/>
+  <dict_event id="9" code="PAY_BACK" title="title" body="body" version="0"/>
+  <dict_event id="10" code="PAY_CORRECTED" title="title" body="body" version="0"/>
+  <dict_event id="11" code="ACTION" title="title" body="body" version="0"/>
+  <dict_event id="12" code="SERVICE" title="title" body="body" version="0"/>
+  <dict_event id="13" code="UPDATE" title="title" body="body" version="0"/>
+  <dict_event id="14" code="CLIENTS" title="title" body="body" version="0"/>
+  <dict_event id="15" code="USERS" title="title" body="body" version="0"/>
+  <dict_event id="16" code="BIRTHDAY" title="title" body="body" version="0"/>
+  
+  <link_user_dict_event_notification id="1" user_id="1" dict_event_id="1" allow_notification="true" version="0"/>
+  <link_user_dict_event_notification id="10" user_id="3" dict_event_id="1" allow_notification="true" version="0"/>
+  
+  <dict_action id="1" name="first dict action" description="Описание первой акции" date_begin="2000-01-01" date_end="3000-02-02" dict_service_type_id="1" dict_action_type="PERSONAL" for_new_clients="true" version="0"/>
+  <dict_action id="2" name="findKeysByDictActionTest" description="findKeysByDictActionTest" date_begin="2000-01-01" date_end="3000-02-02" dict_service_type_id="1" dict_action_type="PERSONAL" for_new_clients="true" version="0"/>
+  
+  <global_settings id="1" default_dict_client_group_id="1" session_store_days="1" version="0"/>
+  <key id="1" createdat="2000-01-01 00:00:00.0" order_id="1" status="CREATED" date_begin="2000-01-01" date_end="3000-01-01" client_id="1" version="0"/>
+  <key id="2" createdat="2000-01-01 00:00:00.0" dict_action_id="2" status="ACTIVE" date_begin="2000-01-01" date_end="2000-01-30" code="+oBHXaxrdQF1dGklbUBNbmwzypcA140irDYiBtD4wadRu5haNr3QGQym3vMYm8vwZd3h+KNWb8b1&#xA;QIITsRrwcx+EQOlGL2l6EkEEvN3dNYpG0qI/A8ugTnlddciS8EuOUsQCH6iHjfruTtAH0k8ARFjD&#xA;FIjwboXPnAUszpFR/z+ehtjQrFg5WBcJG35x22aeJ6/jfbQZM0JjLXRTyBKPLki3WiHd5td1wQp5&#xA;8uh2JAgwdbWNoTBmC/Wn6mrlj6A6HpUW4KMvKCKDWJWPx06LZ0D/G8bTS2kwyHla0PU1RLbWgCDT&#xA;KI7QgkUZfeD+IHx3DH98w+XskwntQ3xw/gYxSgx/fMPl7JMJGCP5PvVbwNQMf3zD5eyTCdYOb82C&#xA;38MojiaqJKXtL2EwlV0WtF2cA3UuWM5RwIyDzs5yZqABGFhPXeh4SfD3Fp2T4ja5zgD9HgCwpbt2&#xA;1RSAYmDBHLyE7sQvB7Wey4S9fgCJB4v8rO7ELwe1nsuEvVDgYbOCMw23DE5mJIj8JnsZq016MAzz&#xA;/t1XbAstwS3Sl9mImqN0ae+DA5N/f1mt1CSuuz6gQ0LgdJdnbFzbjY07UXQ4wUMPGQ==" client_id="1" version="0"/>
+  <key id="3" createdat="2000-01-01 01:00:00.0" dict_action_id="2" status="CREATED" client_id="1" version="0"/>
+  <key id="4" createdat="2000-01-01 02:00:00.0" order_id="3" status="ACTIVE" date_begin="2014-01-01" date_end="2014-01-31" client_id="2" version="0"/>
+  <key id="5" createdat="2000-01-01 00:00:00.0" order_id="3" status="ACTIVE" date_begin="2014-01-31" date_end="2014-03-02" client_id="2" version="0"/>
+  <key id="6" createdat="2000-01-01 00:00:00.0" order_id="3" status="CREATED" client_id="2" version="0"/>
+  <link_client_dict_action/>
+  <link_client_dict_service_type id="1" client_id="2" dict_service_type_id="3" version="0"/>
+  
+  
+  <session_log/>
+  
+  
+  
+</dataset>
